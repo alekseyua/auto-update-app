@@ -1,0 +1,33 @@
+{
+  "productName": "auto-update-app",
+  "appId": "com.auto-update.app",
+  "directories": {
+    "output": "build/${version}"
+  },
+  "publish": [
+    {
+      "provider": "github",
+      "owner": "alekseyua",
+      "repo": "electron-updater",
+      "token": "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"
+    }
+  ],
+  "files": [
+    "dist/electron/**/*"
+  ],
+  "dmg": {
+    "contents": [
+      {
+        "x": 410,
+        "y": 150,
+        "type": "link",
+        "path": "/Applications"
+      },
+      {
+        "x": 130,
+        "y": 150,
+        "type": "file"
+      }
+    ]
+  }
+}

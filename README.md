@@ -1,1 +1,2 @@
 # auto-update-app
+good
