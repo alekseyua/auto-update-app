@@ -1,20 +1,11 @@
 {
   "name": "auto-update-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
     "dev": "electron .",
-    "package": "electron-builder  "
-  },
-  "build":{
-    "publish" :[
-      {
-        "provider": "github",
-        "owner":"alekseyua",
-        "repo": "hz"
-      }
-    ]
+    "package": "electron-builder -p always"
   },
   "author": "Aleksey Chornoivan",
   "license": "MIT",
